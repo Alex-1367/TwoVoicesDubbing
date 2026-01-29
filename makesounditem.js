@@ -1,4 +1,4 @@
-// save as: generate-audio.mjs (or .js with "type": "module" in package.json)
+// save as: generate-audio.mjs
 import axios from 'axios';
 import fs from 'fs/promises';
 import { createWriteStream } from 'fs';
@@ -9,9 +9,31 @@ import { promisify } from 'util';
 const execPromise = promisify(exec);
 
 // Configuration
-const INPUT_CSV = 'e-a.csv'; // Your CSV file
+const INPUT_CSV = '12.csv'; // Changed to match your file
 const OUTPUT_DIR = 'bilingual_audio';
 const PAUSE_DURATION = 1.5; // seconds between German and English
+
+function cleanGermanText(germanText) {
+    if (!germanText) return '';
+    
+    let cleaned = germanText.trim();
+    
+    // Remove annotations like "-n.", "-er.", "Sg.", etc.
+    // These come AFTER a comma, so remove everything after comma
+    const commaIndex = cleaned.indexOf(',');
+    if (commaIndex !== -1) {
+        cleaned = cleaned.substring(0, commaIndex).trim();
+    }
+    
+    // Remove any remaining standalone annotations (just in case)
+    cleaned = cleaned.replace(/\s+[-]?[a-zA-Z]{1,3}\.$/, '');
+    cleaned = cleaned.replace(/\s+Sg\.$/, '');
+    
+    // Remove trailing punctuation
+    cleaned = cleaned.replace(/[.,;]$/g, '');
+    
+    return cleaned.trim();
+}
 
 async function parseCSVFromFile(filePath) {
     try {
@@ -24,20 +46,23 @@ async function parseCSVFromFile(filePath) {
         
         for (let i = startIndex; i < lines.length; i++) {
             const line = lines[i].trim();
-            if (!line) continue; // Skip empty lines
+            if (!line) continue;
             
-            // Simple CSV parsing (handles most cases)
-            // Find first comma that's not inside parentheses
+            // FIXED: Find the LAST comma that's followed by "the" or similar English words
+            // This handles cases like "die Mülltonne, -n.,the garbage bin."
+            
+            // Look for pattern: something, annotation., English
+            // The real separator is the comma BEFORE the English part
+            
             let commaIndex = -1;
-            let inParentheses = false;
             
-            for (let j = 0; j < line.length; j++) {
-                if (line[j] === '(') inParentheses = true;
-                else if (line[j] === ')') inParentheses = false;
-                else if (line[j] === ',' && !inParentheses) {
-                    commaIndex = j;
-                    break;
-                }
+            // Try to find a comma that's followed by "the" (most common case)
+            const theIndex = line.indexOf(', the');
+            if (theIndex !== -1) {
+                commaIndex = theIndex;
+            } else {
+                // Fallback: find the last comma
+                commaIndex = line.lastIndexOf(',');
             }
             
             if (commaIndex === -1) {
@@ -48,7 +73,18 @@ async function parseCSVFromFile(filePath) {
             const german = line.substring(0, commaIndex).trim();
             const english = line.substring(commaIndex + 1).trim();
             
-            vocabulary.push({ german, english });
+            // Clean the German text
+            const cleanedGerman = cleanGermanText(german);
+            
+            // Also clean English text
+            const cleanedEnglish = english.replace(/\.$/, '').trim();
+            
+            vocabulary.push({ 
+                originalGerman: german,
+                german: cleanedGerman,
+                originalEnglish: english,
+                english: cleanedEnglish
+            });
         }
         
         return vocabulary;
@@ -60,6 +96,13 @@ async function parseCSVFromFile(filePath) {
 
 async function downloadTTS(text, language, filename) {
     try {
+        // Skip empty text
+        if (!text || text.trim() === '') {
+            // Create empty file
+            await fs.writeFile(filename, Buffer.from([]));
+            return;
+        }
+        
         const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${language}&q=${encodeURIComponent(text)}`;
         
         const response = await axios({
@@ -107,8 +150,10 @@ async function combineAudio(germanFile, silenceFile, englishFile, outputFile) {
     }
 }
 
-async function generateAudioForWord(german, english, index) {
-    console.log(`Processing ${index + 1}: ${german.substring(0, 40)}...`);
+async function generateAudioForWord(vocabItem, index) {
+    const { german, english, originalGerman } = vocabItem;
+    
+    console.log(`Processing ${index + 1}: "${german}" (from: "${originalGerman}")`);
     
     const tempDir = 'temp_audio';
     await fs.mkdir(tempDir, { recursive: true });
@@ -132,10 +177,10 @@ async function generateAudioForWord(german, english, index) {
         await combineAudio(germanFile, silenceFile, englishFile, outputFile);
         
         console.log(`✓ Created: ${path.basename(outputFile)}`);
-        return { success: true, file: outputFile, german, english };
+        return { success: true, file: outputFile, german, english, originalGerman };
     } catch (error) {
-        console.error(`✗ Failed: ${german.substring(0, 30)}...`, error.message);
-        return { success: false, error: error.message, german, english };
+        console.error(`✗ Failed: "${german.substring(0, 30)}..."`, error.message);
+        return { success: false, error: error.message, german, english, originalGerman };
     } finally {
         // Clean up temp files
         try {
@@ -151,7 +196,7 @@ async function generateAudioForWord(german, english, index) {
 }
 
 export async function generateAudioFromCSV(csvFilePath = INPUT_CSV) {
-    console.log('🎧 German-English Audio Generator\n');
+    console.log('🎧 German-English Audio Generator (Cleaned Version)\n');
     
     // Check for ffmpeg
     try {
@@ -183,13 +228,21 @@ export async function generateAudioFromCSV(csvFilePath = INPUT_CSV) {
     
     console.log(`Found ${vocabulary.length} vocabulary items\n`);
     
+    // Show some examples of cleaned text
+    console.log('Sample cleaning results:');
+    for (let i = 0; i < Math.min(3, vocabulary.length); i++) {
+        const item = vocabulary[i];
+        console.log(`  ${i+1}. "${item.originalGerman}" → "${item.german}"`);
+    }
+    console.log();
+    
     // Generate audio for each word
     const results = [];
     let successCount = 0;
     
     for (let i = 0; i < vocabulary.length; i++) {
         const item = vocabulary[i];
-        const result = await generateAudioForWord(item.german, item.english, i);
+        const result = await generateAudioForWord(item, i);
         results.push(result);
         
         if (result.success) successCount++;
@@ -219,8 +272,10 @@ export async function generateAudioFromCSV(csvFilePath = INPUT_CSV) {
         pauseDuration: PAUSE_DURATION,
         items: results.map((r, i) => ({
             index: i + 1,
-            german: vocabulary[i].german,
-            english: vocabulary[i].english,
+            originalGerman: vocabulary[i].originalGerman,
+            cleanedGerman: vocabulary[i].german,
+            originalEnglish: vocabulary[i].originalEnglish,
+            cleanedEnglish: vocabulary[i].english,
             success: r.success,
             file: r.success ? `word_${String(i + 1).padStart(3, '0')}.mp3` : null,
             error: r.error || null
@@ -236,7 +291,7 @@ export async function generateAudioFromCSV(csvFilePath = INPUT_CSV) {
     const failedItems = results.filter(r => !r.success);
     if (failedItems.length > 0) {
         const failedCsv = failedItems.map((r, i) => 
-            `${vocabulary[results.indexOf(r)].german},${vocabulary[results.indexOf(r)].english}`
+            `${vocabulary[results.indexOf(r)].originalGerman},${vocabulary[results.indexOf(r)].originalEnglish}`
         ).join('\n');
         
         await fs.writeFile(
@@ -246,7 +301,18 @@ export async function generateAudioFromCSV(csvFilePath = INPUT_CSV) {
         console.log(`❌ Failed items saved: ${path.join(OUTPUT_DIR, 'failed_items.csv')}`);
     }
     
+    // Also save a clean CSV for future use
+    const cleanCsv = vocabulary.map(item => 
+        `${item.german},${item.english}`
+    ).join('\n');
+    
+    await fs.writeFile(
+        path.join(OUTPUT_DIR, 'cleaned_vocabulary.csv'),
+        `German,English\n${cleanCsv}`
+    );
+    
     console.log(`📄 Manifest saved: ${path.join(OUTPUT_DIR, 'manifest.json')}`);
+    console.log(`📄 Cleaned vocabulary saved: ${path.join(OUTPUT_DIR, 'cleaned_vocabulary.csv')}`);
     console.log('\n🎯 All done! Ready for your language learning!');
     
     return {
@@ -258,7 +324,7 @@ export async function generateAudioFromCSV(csvFilePath = INPUT_CSV) {
 }
 
 // Export other functions if needed
-export { parseCSVFromFile, generateAudioForWord };
+export { parseCSVFromFile, generateAudioForWord, cleanGermanText };
 
 // DEBUG - Check what's happening
 console.log('DEBUG INFO:');

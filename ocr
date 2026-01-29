@@ -1,0 +1,96 @@
+#!/bin/bash
+# ocr - Clean OCR wrapper script
+# Usage: ocr <image-path>
+
+# Exit on error
+set -e
+
+# Check if image path is provided
+if [ $# -eq 0 ]; then
+    echo "📷 Simple OCR Wrapper"
+    echo "====================="
+    echo "Usage: ocr <image-path>"
+    echo ""
+    echo "Examples:"
+    echo "  ocr /path/to/image.jpg"
+    echo "  ocr document.png"
+    echo "  ocr ~/Pictures/screenshot.jpg"
+    echo ""
+    echo "Supported formats: jpg, jpeg, png, tiff, bmp, gif, webp"
+    exit 1
+fi
+
+IMAGE_PATH="$1"
+
+# Check if file exists
+if [ ! -f "$IMAGE_PATH" ]; then
+    echo "❌ Error: File not found: $IMAGE_PATH"
+    exit 1
+fi
+
+# Check if it's a readable file
+if [ ! -r "$IMAGE_PATH" ]; then
+    echo "❌ Error: Cannot read file: $IMAGE_PATH"
+    exit 1
+fi
+
+# Get file info
+FILE_NAME=$(basename "$IMAGE_PATH")
+FILE_DIR=$(dirname "$IMAGE_PATH")
+FILE_SIZE=$(stat -c%s "$IMAGE_PATH" 2>/dev/null || stat -f%z "$IMAGE_PATH" 2>/dev/null)
+
+# Show file info
+echo "📄 File: $FILE_NAME"
+echo "📁 Path: $FILE_DIR"
+echo "📏 Size: $(numfmt --to=iec-i --suffix=B $FILE_SIZE 2>/dev/null || echo "${FILE_SIZE} bytes")"
+echo "🌐 Language: German (deu)"
+echo ""
+
+# Run OCR
+echo "🔍 Running OCR..."
+echo ""
+
+# Execute tesseract and capture output
+OCR_OUTPUT=$(tesseract "$IMAGE_PATH" stdout -l deu 2>&1)
+EXIT_CODE=$?
+
+if [ $EXIT_CODE -eq 0 ]; then
+    # Count statistics
+    CHAR_COUNT=$(echo -n "$OCR_OUTPUT" | wc -m)
+    WORD_COUNT=$(echo "$OCR_OUTPUT" | wc -w)
+    LINE_COUNT=$(echo "$OCR_OUTPUT" | wc -l)
+
+    # Show statistics
+    echo "✅ OCR completed successfully!"
+    echo ""
+    echo "📊 Statistics:"
+    echo "  Characters: $CHAR_COUNT"
+    echo "  Words: $WORD_COUNT"
+    echo "  Lines: $LINE_COUNT"
+    echo ""
+
+    # Show separator line
+    printf '═%.0s' {1..60}
+    echo ""
+    echo ""
+
+    # Show extracted text
+    echo "$OCR_OUTPUT"
+
+    # Show separator line again
+    echo ""
+    printf '═%.0s' {1..60}
+    echo ""
+
+    # Save to file automatically
+    OUTPUT_FILE="${IMAGE_PATH%.*}_ocr.txt"
+    echo "$OCR_OUTPUT" > "$OUTPUT_FILE"
+    echo ""
+    echo "💾 Saved to: $OUTPUT_FILE"
+
+else
+    echo "❌ OCR failed with exit code: $EXIT_CODE"
+    echo "Error output:"
+    echo "$OCR_OUTPUT"
+    exit $EXIT_CODE
+fi
