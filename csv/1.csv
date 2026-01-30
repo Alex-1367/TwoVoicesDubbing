@@ -1,62 +1,62 @@
-German,English
-wie.,how/as.
-heißen.,to be called/named.
-Wie heißen Sie?,What is your name? (formal)
-Guten Tag.,Good day/Hello.
-und.,and.
-woher.,from where.
-kommen.,to come.
-Woher kommen Sie?,Where are you from? (formal)
-Ich komme aus ...,I come from ...
-(A) Guten Tag.,Good day/Hello.
-Guten Morgen.,Good morning.
-der Name.,the name.
-Mein Name ist ...,My name is ...
-neu.,new.
-das Haus.,the house.
-Ich bin neu hier im Haus.,I'm new here in the building.
-Entschyldigung,,(likely typo) Excuse me,
-wohnen.,to live/reside.
-schon lang(e).,for a long time already.
-hier.,here.
-Das ist ...,That is ...
-Hallo.,Hello.
-wer.,who.
-Wer ist das?,Who is that?
-(B) Buchstaben.,Letters.
-Wie bitte?.,Pardon?/Excuse me?
-schreiben.,to write.
-Wie schreibt man das?,How do you write that?
-buchstabieren.,to spell.
-der Familienname.,the surname/last name.
-der Vorname.,the first name.
-das Land.,the country.
-(C) Formell und informell.,Formal and informal.
-Frau ...,Mrs./Ms. ...
-Herr ... Wie geht es Ihnen?,Mr. ... How are you? (formal)
-denke.,think (ich denke = I think).
-gut.,good.
-auch.,also/too.
-Auf Wiedersehen.,Goodbye (formal).
-Bis bald!,See you soon!
-Es geht so.,It's okay/So-so.
-Tschüss.,Bye/See you (informal).
-Bis morgen.,See you tomorrow.
-was machen.,to do/what to do.
-Was machst du?,What are you doing? (informal)
-lernen.,to learn.
-Deutsch.,German.
-wo.,where.
-(D) Zahlen bis 20.,Numbers up to 20.
-die Zahl.,the number.
-die Nummer.,the number (phone/ID number).
-Meine Nummer ist ...,My number is ...
-ja.,yes.
-neun.,nine.
-Ja, genau.,Yes, exactly.
-nicht.,not.
-(E) Was sind Sie von Beruf?,What is your profession?
-der Beruf.,the profession/occupation.
-Was sind Sie von Beruf?,What is your profession? (formal)
-der/die Ingenieur/in.,the engineer (male/female).
-der/die Verkäufer/in.,the salesperson/seller (male/female).
+German;English
+wie;how/as
+heißen;to be called/named
+Wie heißen Sie?;What is your name? (formal)
+Guten Tag;Good day/Hello
+und;and
+woher;from where
+kommen;to come
+Woher kommen Sie?;Where are you from? (formal)
+Ich komme aus ...;I come from ...
+(A) Guten Tag;Good day/Hello
+Guten Morgen;Good morning
+der Name;the name
+Mein Name ist ...;My name is ...
+neu;new
+das Haus;the house
+Ich bin neu hier im Haus;I'm new here in the building
+Entschyldigung;Excuse me (likely typo)
+wohnen;to live/reside
+schon lang(e);for a long time already
+hier;here
+Das ist ...;That is ...
+Hallo;Hello
+wer;who
+Wer ist das?;Who is that?
+(B) Buchstaben;Letters
+Wie bitte?;Pardon?/Excuse me?
+schreiben;to write
+Wie schreibt man das?;How do you write that?
+buchstabieren;to spell
+der Familienname;the surname/last name
+der Vorname;the first name
+das Land;the country
+(C) Formell und informell;Formal and informal
+Frau ...;Mrs./Ms. ...
+Herr ... Wie geht es Ihnen?;Mr. ... How are you? (formal)
+denke;think (ich denke = I think)
+gut;good
+auch;also/too
+Auf Wiedersehen;Goodbye (formal)
+Bis bald!;See you soon!
+Es geht so;It's okay/So-so
+Tschüss;Bye/See you (informal)
+Bis morgen;See you tomorrow
+was machen;to do/what to do
+Was machst du?;What are you doing? (informal)
+lernen;to learn
+Deutsch;German
+wo;where
+(D) Zahlen bis 20;Numbers up to 20
+die Zahl;the number
+die Nummer;the number (phone/ID number)
+Meine Nummer ist ...;My number is ...
+ja;yes
+neun;nine
+Ja, genau;Yes, exactly
+nicht;not
+(E) Was sind Sie von Beruf?;What is your profession?
+der Beruf;the profession/occupation
+Was sind Sie von Beruf?;What is your profession? (formal)
+der/die Ingenieur/in;the engineer (male/female)
+der/die Verkäufer/in;the salesperson/seller (male/female)

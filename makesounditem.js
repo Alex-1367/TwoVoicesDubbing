@@ -41,50 +41,59 @@ async function parseCSVFromFile(filePath) {
         const lines = csvContent.trim().split('\n');
         const vocabulary = [];
         
-        // Skip header if present
-        const startIndex = lines[0].startsWith('German,English') ? 1 : 0;
+        // Check if header exists and skip it
+        const startIndex = lines[0].toLowerCase().startsWith('german') ? 1 : 0;
         
         for (let i = startIndex; i < lines.length; i++) {
             const line = lines[i].trim();
             if (!line) continue;
             
-            // FIXED: Find the LAST comma that's followed by "the" or similar English words
-            // This handles cases like "die Mülltonne, -n.,the garbage bin."
+            // CHANGED: Split by ";" instead of looking for commas
+            const separatorIndex = line.indexOf(';');
             
-            // Look for pattern: something, annotation., English
-            // The real separator is the comma BEFORE the English part
-            
-            let commaIndex = -1;
-            
-            // Try to find a comma that's followed by "the" (most common case)
-            const theIndex = line.indexOf(', the');
-            if (theIndex !== -1) {
-                commaIndex = theIndex;
+            if (separatorIndex === -1) {
+                // Fallback to comma if semicolon not found
+                console.warn(`No ";" separator found in line ${i+1}, trying comma fallback: "${line}"`);
+                
+                // Try to find the last comma followed by "the" or similar
+                const theIndex = line.indexOf(', the');
+                if (theIndex !== -1) {
+                    const german = line.substring(0, theIndex).trim();
+                    const english = line.substring(theIndex + 1).trim();
+                    
+                    // Clean the German text
+                    const cleanedGerman = cleanGermanText(german);
+                    
+                    // Also clean English text
+                    const cleanedEnglish = english.replace(/\.$/, '').trim();
+                    
+                    vocabulary.push({ 
+                        originalGerman: german,
+                        german: cleanedGerman,
+                        originalEnglish: english,
+                        english: cleanedEnglish
+                    });
+                } else {
+                    console.warn(`Skipping line ${i+1}: Cannot parse without ";": "${line}"`);
+                    continue;
+                }
             } else {
-                // Fallback: find the last comma
-                commaIndex = line.lastIndexOf(',');
+                const german = line.substring(0, separatorIndex).trim();
+                const english = line.substring(separatorIndex + 1).trim();
+                
+                // Clean the German text
+                const cleanedGerman = cleanGermanText(german);
+                
+                // Also clean English text
+                const cleanedEnglish = english.replace(/\.$/, '').trim();
+                
+                vocabulary.push({ 
+                    originalGerman: german,
+                    german: cleanedGerman,
+                    originalEnglish: english,
+                    english: cleanedEnglish
+                });
             }
-            
-            if (commaIndex === -1) {
-                console.warn(`No comma found in line: ${line}`);
-                continue;
-            }
-            
-            const german = line.substring(0, commaIndex).trim();
-            const english = line.substring(commaIndex + 1).trim();
-            
-            // Clean the German text
-            const cleanedGerman = cleanGermanText(german);
-            
-            // Also clean English text
-            const cleanedEnglish = english.replace(/\.$/, '').trim();
-            
-            vocabulary.push({ 
-                originalGerman: german,
-                german: cleanedGerman,
-                originalEnglish: english,
-                english: cleanedEnglish
-            });
         }
         
         return vocabulary;

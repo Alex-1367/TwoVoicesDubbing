@@ -1,7 +1,7 @@
-German,English
-Taxifahrer.,taxi driver (male).
-Sekretärin.,secretary (female).
-Programmiererin.,programmer (female).
-Programmierer.,programmer (male).
-Arzt.,doctor (male).
-Ärztin.,(likely typo "Artin") doctor (female).
+German;English
+Taxifahrer;taxi driver (male)
+Sekretärin;secretary (female)
+Programmiererin;programmer (female)
+Programmierer;programmer (male)
+Arzt;doctor (male)
+Ärztin;(likely typo "Artin") doctor (female)

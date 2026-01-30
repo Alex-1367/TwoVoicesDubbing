@@ -1,10 +1,10 @@
-German,English
-Bestelleneimer.,(likely typo) shopping cart/basket (Bestellkorb/Warenkorb).
-Größe.,size.
-Gesamtpreis.,total price.
-Rechnungsadresse.,billing address.
-Rechnung.,bill/invoice.
-Bestellung.,order.
-Menge.,quantity/amount.
-Lieferzeit.,delivery time.
-Mwst, Mehrwertsteuer.,VAT, value-added tax.
+German;English
+Bestelleneimer;(likely typo) shopping cart/basket (Bestellkorb/Warenkorb)
+Größe;size
+Gesamtpreis;total price
+Rechnungsadresse;billing address
+Rechnung;bill/invoice
+Bestellung;order
+Menge;quantity/amount
+Lieferzeit;delivery time
+Mwst, Mehrwertsteuer;VAT, value-added tax
