@@ -1,0 +1,14 @@
+hören - hat gehört
+lesen - hat gelesen
+aufräumen - hat aufgeräumt
+einschlafen - ist eingeschlafen
+
+gehen -ist gegangen
+träumen - hat geträumt
+essen - hat gegessen
+einkaufen - hat eingekauft
+
+kochen - hat gekocht
+trinken - hat getrunken
+fernsehen - hat ferngesehen
+fahren - ist gefahren

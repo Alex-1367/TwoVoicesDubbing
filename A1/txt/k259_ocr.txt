@@ -1,0 +1,19 @@
+Ich hätte gern eine Fahrkarte von Bremen
+nach Stuttgart mit Reservierung,
+
+Erste oder zweite Klasse?
+
+Zweite Klasse, bitte.
+
+Wann möchten Sie abfahren?
+
+Ich nehme den IC um 9.44 Uhr ab Bremen,
+Hauptbahnhof. Muss ich umsteigen?
+
+Nein, der Zug fährt direkt. Sie kommen um
+16.22 Uhr in Stuttgart an. Haben Sie eine
+BahnCard?
+
+Ja, ich habe eine BahnCard 25.
+
+Das sind dann mit Reservierung 90,75€

@@ -1,0 +1,13 @@
+Ihr Name?
+Ihre Adresse?
+Ihre Handynummer?
+Ihre E-Mail-Adresse?
+Ihre Postleitzahl?
+
+Wie ist Ihr Name?
+
+Wie ist Ihre Adresse?
+
+Wie ist Ihre Handynummer?
+Wie ist Ihre E-Mail-Adresse?
+Wie ist Ihre Postleitzahl?

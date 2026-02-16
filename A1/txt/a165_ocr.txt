@@ -1,0 +1,10 @@
+das Obst
+die Banane
+der Apfel
+das Gemüse
+die Tomate
+der Salat
+die Bäckerei
+das Brot
+das Brötchen
+der Kuchen

@@ -1,0 +1,10 @@
+die Halsschmerzen
+die Bauchschmerzen
+die Kopfschmerzen
+die Krankenkasse
+die Gesundheitskarte
+die Krankschreibung
+die Apotheke
+das Rezept
+das Medikament
+die Tablette

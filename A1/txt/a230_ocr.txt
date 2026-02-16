@@ -1,0 +1,10 @@
+das Bürgeramt
+die Meldestelle
+das Ausländeramt
+derGeburtsort
+das Geburtsdatum
+der Familienstand
+die Staatsangehörigkeit
+der Mietvertrag
+der Kindergeldantrag
+die Kursgebühr

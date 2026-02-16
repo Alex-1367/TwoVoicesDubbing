@@ -1,0 +1,5 @@
+Ist das ein Bett?
+Ist das ein Stuhl?
+Ist das ein Waschbecken?
+Ist das eine Spülmaschine?
+Ist das eine Kommode?

@@ -1,0 +1,28 @@
+Guten Tag.
+Guten Tag, ich hätte gern eine Fahrkarte von
+Köln nach Freiburg.
+
+Wann möchten Sie fahren?
+
+Ich möchte morgen früh fahren. Ab 8 Uhr.
+Um 8 Uhr 53 fährt ein EC. Sie sind um 12
+Uhr 53 in Freiburg.
+
+Muss ich umsteigen?
+
+Nein, der Zug fährt direkt. 1. oder 2. Klasse?
+Zweite Klasse, bitte.
+
+Haben Sie eine BahnCard?
+
+Ja, ich habe eine BahnCard 25.
+
+Möchten Sie eine Reservierung?
+
+Ja, mit Reservierung, bitte.
+
+Das macht dann 63,75 Euro.
+
+Kann ich mit EC-Karte bezahlen?
+
+Ja, natürlich,

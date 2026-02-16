@@ -1,0 +1,13 @@
+DIALOG
+Wer ist das?
+Das hier ist mein Onkel Martin und das ist
+meine Tante Bianca.
+ Und die Kinder?
+Links, das ist meine Cousine Caroline. Und
+rechts, das ist mein Cousin Marc.
+
+DIALOG 2:
+Wer ist das?
+Das ist mein Bruder Alberto und das sind
+seine drei Kinder, also meine Nichten Rita
+und Maria und mein Neffe Daniel.

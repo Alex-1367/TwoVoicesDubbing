@@ -1,0 +1,19 @@
+Dialog A
+
+Entschuldigung, ich möchte nicht stören,
+aber ich habe eine Bitte.
+
+Nein, nein, Sie stören überhaupt nicht,
+kann ich Ihnen helfen?
+
+Ich backe gerade einen Kuchen und habe
+keine Eier mehr. Können Sie mir vielleicht
+drei Eier geben?
+
+* Aber gerne, warten Sie, ich hole die Eier,
+
+so, hier sind sie
+
+° Vielen Dank!
+
+Gern geschehen.

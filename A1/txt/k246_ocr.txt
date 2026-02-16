@@ -1,0 +1,10 @@
+die Bluse
+das Kleid
+die Jacke
+der Pullover
+das T-Shirt
+der Mantel
+die Jeans
+die Unterwäsche
+die Schuhe (PL)
+die Socken (PL)

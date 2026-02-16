@@ -1,0 +1,29 @@
+DIALOG 1
+
+Herr Kim, wie ist Ihr Weg zur Arbeit? Brauchen
+Sie viel Zeit?
+
+Nein, mein Weg ist nicht so lang, Ich wohne und
+arbeite in Berlin. Mit dem Fahrrad und der S-
+Bahn brauche ich insgesamt nur 20 Minuten. Für
+den Weg zur Arbeit und von der Arbeit zurück
+nach Hause brauche ich jeden Tag also nur 40
+Minuten.
+
+ Da haben Sie wirklich Glück.
+
+DIALOG 2
+Herr Schmidt, wie lange brauchen Sie zur Ar-
+beit? Wie ist Ihr Weg zur Arbeit?
+
+Ich wohne in Peine und arbeite bei der Post in
+Hannover. Mein Weg zur Arbeit ist also ziemlich
+weit, ich brauche ziemlich genau 55 Minuten.
+
+Fahren Sie mit dem Auto?
+
+Nein, ich nehme immer den Zug, von zu Hause
+gehe ich fünf Minuten zu Fuß zum Bahnhof und
+in Hannover fahre ich dann noch einige Minuten
+mit der Straßenbahn vom Hauptbahnhof bis zu
+meinem Arbeitsplatz.

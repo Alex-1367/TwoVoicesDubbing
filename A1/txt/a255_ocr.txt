@@ -1,0 +1,8 @@
+die Ankunft - ankommen
+die Abfahrt - abfahren
+die Verspätung - zu spät
+der Regen - es regnet
+der Schnee - es schneit
+das Wetter
+die Monate
+die Jahreszeiten
