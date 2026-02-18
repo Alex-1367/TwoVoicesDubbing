@@ -1,0 +1,36 @@
+die Kamera, -s
+das Reisedokument, -e
+die Brieftasche, -n
+
+das Kiosk, -e
+
+das Lokal, -e
+
+B Dialoge auf der Reise
+der Autounfall, *-e
+die Notrufsäule, -n
+die Notrufzentrale, -n
+der Pannendienst, -e
+die Autopanne, -n
+der Kilometer, -
+der Wagen, -
+Das macht nichts!
+die Platzreservierung, -en
+
+besetzt
+
+€ Reiseplanung
+das Reiseziel, -e
+das Ausflugsziel, -e
+die Unterkunft, *-e
+die Altstadt, Sg.
+die Burg, -en
+ideal
+autofrei
+überall
+der Fahrradweg, -e
+die Insel, -n
+
+die Küste, -n
+
+der Rundgang, *-e
