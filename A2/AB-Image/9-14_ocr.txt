@@ -1,0 +1,9 @@
+Arzthelferin
+Blutdruck
+Gesundheits-Check
+Laboruntersuchung
+Vorsorgeuntersuchung
+Blutwerte (Pl.)
+Cholesterinwerte (PI.)
+
+Gesundheitsuntersuchung

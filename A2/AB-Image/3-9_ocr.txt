@@ -1,0 +1,16 @@
+(Ö) Restaurant zur Post. Was kann ich für Sie tun?
+
+Ü) Auf Wiederhören.
+
+(E) Möchten Sie einen Tisch auf der Terrasse?
+
+Ü Guten Abend, hier spricht Fernando Lopez. Ich möchte gerne einen Tisch
+für Samstagabend reservieren. Geht das?
+
+Ü Das habe ich notiert. Vielen Dank für Ihre Reservierung. Auf Wiederhören.
+
+©) Wir sind drei Personen und wollen um 20.00 Uhr kommen.
+
+© Ja, das geht. Wie viele Personen sind Sie und wann möchten Sie kommen?
+
+D Ja, gerne.

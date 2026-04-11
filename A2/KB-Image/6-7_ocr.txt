@@ -1,0 +1,5 @@
+Kinderzimmer U) Küche
+Wohnzimmer U) Gästezimmer
+‚Arbeitszimmer U Bad
+Schlafzimmer D wc
+Esszimmer DD Keller
