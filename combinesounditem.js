@@ -9,7 +9,7 @@ const execPromise = promisify(exec);
 // Configuration
 const INPUT_DIR = 'bilingual_audio';
 const OUTPUT_FILE = 'combined_vocabulary.mp3';
-const SILENCE_DURATION = 2.5; // seconds between files
+const SILENCE_DURATION = 3; // seconds between files
 const SILENCE_FILE = 'silence_2s.mp3';
 
 async function createSilence(duration, outputFile) {

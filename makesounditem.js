@@ -149,7 +149,7 @@ async function createSilence(duration, outputFile) {
 }
 
 async function combineAudio(germanFile, silenceFile, englishFile, outputFile) {
-    const command = `ffmpeg -i "concat:${germanFile}|${silenceFile}|${englishFile}" -c copy "${outputFile}" -y`;
+    const command = `ffmpeg -i "concat:${germanFile}|${silenceFile}|${englishFile}|${silenceFile}|${germanFile}" -c copy "${outputFile}" -y`;
     
     try {
         await execPromise(command);
