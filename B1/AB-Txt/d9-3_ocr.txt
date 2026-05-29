@@ -1,0 +1,14 @@
+Babywindel, die, -n
+
+Matratze, die, -n
+
+D Tiere
+Schaf, das -e
+Kuh, die, “-e
+Pferd, das, -e
+Huhn, das, “-er
+Vogel, der, “
+Schwein, das, -e
+streicheln
+
+reiten

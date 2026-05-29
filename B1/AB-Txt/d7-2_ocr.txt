@@ -1,0 +1,48 @@
+Lenkrad, das, “-er
+
+Kupplung, die, -en
+
+Kindersitz, dr, e O3
+Sicherheitsgurt, der, -e
+Scheinwerfer, dr, -
+Seitenspiegel, der, -
+
+Gaspedal, ds, ee 34a
+
+Warndreieck, ds, -e
+
+Erste-Hilfe-Kasten, der, *-
+
+Windschutzscheibe, die, -n
+
+Blinker, der, -
+
+Motorhaube, die, -n
+
+Reifen, der, -
+
+Tank, de, Ss 0000000000000
+tanken 22
+Bremse, die,-n 00000 nam
+Wagenheber, dr, -
+Schalthebel, dr, -
+Ölstand, d, 8
+Fahrzeugpapiere, l.
+
+Zeuge/Zeugin, der/die, -n/-nen
+
+befragen
+
+ab}schleppen
+umleiten an
+
+Verletzte, der/die, nn _..
+
+D Zeitungsmeldungen
+Zeitungsmeldung, die, -en _...
+
+Verkehrschaos, das, Sg.
+
+Ferienbeginn, der, Sg.
+
+Raststätte, die, -n

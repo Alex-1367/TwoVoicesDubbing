@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 import { join } from 'path';
 
 // Configuration
-const INPUT_DIR = './A2/section';
+const INPUT_DIR = '/home/admin/Videos/Translate/B1/KB-CSV/';
 const OUTPUT_DIR = './reversy';
 const HEADER = 'English;German\n';
 

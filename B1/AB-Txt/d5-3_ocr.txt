@@ -1,0 +1,19 @@
+C Die Gehaltsabrechnung
+
+Abrechnung, die, -en
+
+Gehaltsabrechnung, die, -en
+
+Steuerklasse, die, -n
+
+Bruttogehalt, das, “-er
+
+Abzug, der, “-e
+
+Lohnsteuer, die, -n
+
+Solidarzuschlag, der, “-e
+
+Kirchensteuer, die, -n
+
+Krankenversicherung, die, -en
