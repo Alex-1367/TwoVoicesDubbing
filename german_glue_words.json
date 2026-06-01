@@ -164,5 +164,63 @@
      "sich kümmern um", "sich schämen für", "sich sehnen nach",
      "sich streiten über", "sich verabschieden von", "sich verlassen auf",
      "sich vorbereiten auf", "sich wundern über"
-   ]
+   ],
+   "orientation_adverbs": {
+    "direction": [
+      "links", "rechts", "geradeaus", "rückwärts", "vorwärts",
+      "aufwärts", "abwärts", "seitwärts", "nordwärts", "südwärts",
+      "ostwärts", "westwärts", "hinauf", "hinunter", "hinüber",
+      "herüber", "hinein", "heraus", "hinaus", "herein", "hervor"
+    ],
+    "position": [
+      "oben", "unten", "vorne", "hinten", "drinnen", "draußen",
+      "innen", "außen", "mitten", "daneben", "dazwischen",
+      "oberhalb", "unterhalb", "nebenan", "gegenüber"
+    ],
+    "location_relative": [
+      "dort", "hier", "da", "dahinten", "davor", "dahinter",
+      "darüber", "darunter", "darin", "daran", "dagegen"
+    ]
+  },
+  "comparative_quantifiers": [
+    "mehr", "weniger", "genauso", "ebenso", "gleich viel",
+    "doppelt so viel", "halb so viel", "einige", "wenige",
+    "viele", "zahlreiche", "mehrere", "sämtliche"
+  ],
+  "intensifiers": [
+    "sehr", "besonders", "äußerst", "extrem", "ziemlich",
+    "ganz", "völlig", "total", "absolut", "vollkommen",
+    "reichlich", "überaus", "höchst", "mäßig", "wenig",
+    "etwas", "einigermaßen", "derart", "so", "zu"
+  ],
+  "orientation_prepositions_extended": [
+    "über", "unter", "oberhalb", "unterhalb", "neben",
+    "zwischen", "vor", "hinter", "in", "an", "auf",
+    "bei", "entlang", "gegenüber", "um ... herum",
+    "hindurch", "durch", "jenseits", "diesseits"
+  ],
+    "transition_words": [
+    "zuerst", "dann", "danach", "anschließend", "schließlich",
+    "endlich", "inzwischen", "mittlerweile", "indes", "unterdessen",
+    "vorher", "nachher", "währenddessen", "gleichzeitig"
+  ],
+  "cause_effect_words": [
+    "deshalb", "darum", "deswegen", "daher", "somit", "also",
+    "folglich", "dementsprechend", "infolgedessen", "demnach"
+  ],
+  "relative_pronouns": [
+  "der", "die", "das", "den", "dem", "des",
+  "welcher", "welche", "welches", "welchem", "welchen"
+],
+  "time_prepositions": [
+  "um", "von", "bis", "ab", "seit", "vor", "nach",
+  "gegen", "zwischen", "über", "in", "an", "zu"
+],
+ "negation_placement": [
+  "nicht", "kein", "nie", "niemals", "nichts", "weder", "noch"
+],
+ "comparative_adjectives": [
+  "größer", "kleiner", "besser", "schlechter", "mehr", "weniger",
+  "älter", "jünger", "schneller", "langsamer", "höher", "tiefer"
+]
 }

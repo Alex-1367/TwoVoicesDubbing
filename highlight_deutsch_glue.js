@@ -9,7 +9,7 @@ const allConjunctions = [
   ...glueWords.conjunctions.subordinating
 ];
 
-// Define all categories with colors
+// Define all categories with colors (UPDATED with all new JSON categories)
 const wordCategories = [
   { words: glueWords.prepositions, color: 'blue', name: 'Preposition', caseInsensitive: true },
   { words: glueWords.two_way_prepositions || [], color: 'darkblue', name: 'Two-way Prep', caseInsensitive: true },
@@ -27,6 +27,8 @@ const wordCategories = [
   { words: glueWords.da_wo_compounds || [], color: 'coral', name: 'Da/Wo-Comp', caseInsensitive: true },
   { words: glueWords.negation_words || [], color: 'gray', name: 'Negation', caseInsensitive: true },
   { words: glueWords.modal_verbs || [], color: 'gold', name: 'Modal Verb', caseInsensitive: true },
+  
+  // Verb position indicators
   { 
     words: (glueWords.verb_position_indicators?.main_clause_triggers || []),
     color: 'lime', name: 'Main Clause Trigger', caseInsensitive: true 
@@ -39,6 +41,8 @@ const wordCategories = [
     words: (glueWords.verb_position_indicators?.verb_at_end_markers || []),
     color: 'goldenrod', name: 'Verb-at-End Marker', caseInsensitive: true 
   },
+  
+  // Case markers
   { 
     words: (glueWords.case_markers?.accusative_prepositions || []),
     color: 'lightblue', name: 'Accusative Prep', caseInsensitive: true 
@@ -48,6 +52,10 @@ const wordCategories = [
     color: 'lightcoral', name: 'Dative Prep', caseInsensitive: true 
   },
   { 
+    words: (glueWords.case_markers?.genitive_prepositions || []),
+    color: 'plum', name: 'Genitive Prep', caseInsensitive: true 
+  },
+  { 
     words: (glueWords.case_markers?.accusative_articles || []),
     color: 'skyblue', name: 'Accusative Article', caseInsensitive: true 
   },
@@ -55,9 +63,79 @@ const wordCategories = [
     words: (glueWords.case_markers?.dative_articles || []),
     color: 'salmon', name: 'Dative Article', caseInsensitive: true 
   },
+  
+  // Fixed verb-preposition combos
   { 
     words: (glueWords.fixed_preposition_verb_combos || []),
     color: 'violet', name: 'Fixed Prep+Verb', caseInsensitive: true 
+  },
+  
+  // Orientation adverbs (NEW)
+  { 
+    words: (glueWords.orientation_adverbs?.direction || []),
+    color: 'lightseagreen', name: 'Direction Adv', caseInsensitive: true 
+  },
+  { 
+    words: (glueWords.orientation_adverbs?.position || []),
+    color: 'mediumturquoise', name: 'Position Adv', caseInsensitive: true 
+  },
+  { 
+    words: (glueWords.orientation_adverbs?.location_relative || []),
+    color: 'turquoise', name: 'Relative Location', caseInsensitive: true 
+  },
+  
+  // Comparative quantifiers (NEW)
+  { 
+    words: (glueWords.comparative_quantifiers || []),
+    color: 'yellowgreen', name: 'Comparative Quantifier', caseInsensitive: true 
+  },
+  
+  // Intensifiers (NEW)
+  { 
+    words: (glueWords.intensifiers || []),
+    color: 'khaki', name: 'Intensifier', caseInsensitive: true 
+  },
+  
+  // Extended orientation prepositions (NEW)
+  { 
+    words: (glueWords.orientation_prepositions_extended || []),
+    color: 'steelblue', name: 'Orientation Prep', caseInsensitive: true 
+  },
+  
+  // Transition words (NEW)
+  { 
+    words: (glueWords.transition_words || []),
+    color: 'plum', name: 'Transition', caseInsensitive: true 
+  },
+  
+  // Cause/effect words (NEW)
+  { 
+    words: (glueWords.cause_effect_words || []),
+    color: 'hotpink', name: 'Cause/Effect', caseInsensitive: true 
+  },
+  
+  // Relative pronouns (NEW)
+  { 
+    words: (glueWords.relative_pronouns || []),
+    color: 'orchid', name: 'Relative Pronoun', caseInsensitive: true 
+  },
+  
+  // Time prepositions (NEW)
+  { 
+    words: (glueWords.time_prepositions || []),
+    color: 'lightsteelblue', name: 'Time Prep', caseInsensitive: true 
+  },
+  
+  // Negation placement (NEW)
+  { 
+    words: (glueWords.negation_placement || []),
+    color: 'dimgray', name: 'Negation Placement', caseInsensitive: true 
+  },
+  
+  // Comparative adjectives (NEW)
+  { 
+    words: (glueWords.comparative_adjectives || []),
+    color: 'olivedrab', name: 'Comparative Adj', caseInsensitive: true 
   }
 ];
 
@@ -77,7 +155,7 @@ function buildSingleWordRegex(wordList, caseInsensitive) {
   return new RegExp(`\\b(${pattern})\\b`, caseInsensitive ? 'gi' : 'g');
 }
 
-// Clean RTF header - NO COMMENTS
+// RTF header with extended color table
 function rtfHeader() {
   return `{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1031
 \\paperw11906\\paperh16838
@@ -114,6 +192,18 @@ function rtfHeader() {
 \\red128\\green0\\blue128;
 \\red255\\green165\\blue0;
 \\red105\\green105\\blue105;
+\\red32\\green178\\blue170;
+\\red72\\green209\\blue204;
+\\red64\\green224\\blue208;
+\\red154\\green205\\blue50;
+\\red240\\green230\\blue140;
+\\red70\\green130\\blue180;
+\\red221\\green160\\blue221;
+\\red255\\green105\\blue180;
+\\red218\\green112\\blue214;
+\\red176\\green196\\blue222;
+\\red105\\green105\\blue105;
+\\red107\\green142\\blue35;
 }
 \\viewkind4\\uc1\\pard\\lang1031\\f0\\fs24
 `;
@@ -155,7 +245,11 @@ function getColorCode(color) {
     'cyan': 7, 'darkred': 8, 'teal': 9, 'brown': 10, 'olive': 11,
     'darkorange': 12, 'gold': 13, 'goldenrod': 14, 'lightblue': 15,
     'lightcoral': 16, 'skyblue': 17, 'salmon': 18, 'violet': 19,
-    'lime': 20, 'darkblue': 21, 'purple': 22, 'coral': 23, 'gray': 24
+    'lime': 20, 'darkblue': 21, 'purple': 22, 'coral': 23, 'gray': 24,
+    'lightseagreen': 25, 'mediumturquoise': 26, 'turquoise': 27,
+    'yellowgreen': 28, 'khaki': 29, 'steelblue': 30, 'plum': 31,
+    'hotpink': 32, 'orchid': 33, 'lightsteelblue': 34, 'dimgray': 35,
+    'olivedrab': 36
   };
   return colorMap[color] || 1;
 }
@@ -218,6 +312,7 @@ function processFile(inputPath, outputPath) {
   const rtfContent = rtfHeader() + highlighted + rtfFooter();
   writeFileSync(outputPath, rtfContent, 'utf8');
   console.log(`✅ Created: ${outputPath}`);
+  console.log(`   Categories loaded: ${wordCategories.filter(c => c.words?.length > 0).length}`);
 }
 
 const args = process.argv.slice(2);
