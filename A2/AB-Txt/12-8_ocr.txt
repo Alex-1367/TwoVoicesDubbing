@@ -1,0 +1,4 @@
+die Strafe, -n
+die Abrechnung, -en
+
+austziehen

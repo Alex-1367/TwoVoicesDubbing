@@ -1,0 +1,168 @@
+{
+  "prepositions": [
+    "aus", "bei", "mit", "nach", "von", "zu", "gegenüber", "durch", "für",
+    "gegen", "ohne", "um", "an", "auf", "hinter", "in", "neben", "über",
+    "unter", "vor", "zwischen", "bis", "entlang", "innerhalb", "außerhalb",
+    "trotz", "während", "wegen", "anstatt", "statt", "seit", "ab", "außer",
+    "gemäß", "laut", "nahe", "mitsamt", "samt", "zuzüglich", "abzüglich",
+    "fern", "unweit"
+  ],
+  "conjunctions": {
+    "coordinating": [
+      "und", "oder", "aber", "denn", "sondern", "doch", "allein", "jedoch"
+    ],
+    "subordinating": [
+      "dass", "weil", "wenn", "als", "bevor", "nachdem", "obwohl", "obgleich",
+      "während", "sobald", "solange", "soweit", "sodass", "indem",
+      "dadurch dass", "falls", "sofern", "ob", "wie", "wo", "woher", "wohin",
+      "wieso", "weshalb", "weswegen", "zumal", "da", "bis", "seitdem",
+      "sooft", "sowie", "wenn auch", "ohne dass", "anstatt dass", "außer dass",
+      "je", "desto", "indes", "indessen"
+    ]
+  },
+  "comparison_words": [
+    "als", "wie", "als ob", "als wenn", "je", "desto", "umso", "genauso",
+    "ebenso", "nicht so wie", "weniger als", "mehr als", "ähnlich wie",
+    "gleich wie", "anders als"
+  ],
+  "separable_prefixes": [
+    "ab", "an", "auf", "aus", "bei", "da", "dabei", "dafür", "dagegen",
+    "dar", "darauf", "daraus", "darin", "darüber", "darum", "darunter",
+    "davon", "davor", "dazu", "ein", "entgegen", "entlang", "fest", "fort",
+    "her", "herab", "heran", "herauf", "heraus", "herbei", "herein",
+    "herüber", "herum", "herunter", "hervor", "hin", "hinab", "hinan",
+    "hinauf", "hinaus", "hindurch", "hinein", "hinterher", "hinüber",
+    "hinunter", "hinzu", "hoch", "los", "mit", "nach", "nieder", "statt",
+    "um", "unter", "vor", "vorbei", "vorher", "weg", "weiter", "wieder",
+    "zu", "zurecht", "zurück", "zusammen"
+  ],
+  "personal_pronouns": [
+    "ich", "du", "er", "sie", "es", "wir", "ihr", "sie", "Sie", "mich",
+    "dich", "ihn", "uns", "euch", "Ihnen", "mir", "dir", "ihr"
+  ],
+  "possessive_pronouns": [
+    "mein", "meine", "meiner", "meines", "meinem", "meinen", "dein", "deine",
+    "deiner", "deines", "deinem", "deinen", "sein", "seine", "seiner",
+    "seines", "seinem", "seinen", "ihr", "ihre", "ihrer", "ihres", "ihrem",
+    "ihren", "unser", "unsere", "unserer", "unseres", "unserem", "unseren",
+    "euer", "eure", "eurer", "eures", "eurem", "euren", "Ihr", "Ihre",
+    "Ihrer", "Ihres", "Ihrem", "Ihren"
+  ],
+  "reflexive_pronouns": [
+    "mich", "dich", "sich", "uns", "euch", "mir", "dir"
+  ],
+  "question_words": [
+    "wer", "wen", "wem", "wessen", "was", "welcher", "welche", "welches",
+    "wann", "wo", "woher", "wohin", "warum", "weshalb", "wieso", "wie",
+    "wie viel", "wie viele", "wie lange", "wozu", "womit", "wovon",
+    "worüber", "woran", "worauf", "woraus", "wodurch", "wofür", "wogegen"
+  ],
+  "modal_particles": [
+    "aber", "auch", "bloß", "denn", "doch", "eigentlich", "einfach", "etwa",
+    "halt", "ja", "mal", "nur", "schon", "vielleicht", "wohl", "eben",
+    "ruhig", "schließlich", "zwar", "gleich", "natürlich"
+  ],
+  "determiners_articles": [
+    "der", "die", "das", "den", "dem", "des", "ein", "eine", "einer",
+    "eines", "einem", "einen", "kein", "keine", "keiner", "keines",
+    "keinem", "keinen"
+  ],
+  "temporal_location_adverbs": [
+    "hier", "dort", "dorther", "dorthin", "da", "dahin", "davon", "danach",
+    "davor", "dabei", "dadurch", "damit", "daran", "darauf", "daraus",
+    "darin", "darüber", "darum", "darunter", "heute", "morgen", "gestern",
+    "vorgestern", "übermorgen", "jetzt", "sofort", "gleich", "später",
+    "früher", "damals", "immer", "nie", "manchmal", "oft", "selten",
+    "überall", "nirgendwo"
+  ],
+  "infinitive_markers": [
+    "zu", "um zu", "statt zu", "ohne zu", "anstatt zu"
+  ],
+  "two_way_prepositions": [
+    "an", "auf", "hinter", "in", "neben", "über", "unter", "vor", "zwischen"
+  ],
+  "modal_verbs": [
+    "kann", "kannst", "können", "könnt", "musst", "müssen", "muss", "soll",
+    "sollen", "sollt", "will", "willst", "wollen", "wollt", "mag", "magst",
+    "mögen", "mögt", "darf", "darfst", "dürfen", "dürft"
+  ],
+  "subclause_triggers": [
+    "dass", "weil", "wenn", "obwohl", "damit", "so dass", "falls", "während",
+    "bevor", "nachdem"
+  ],
+  "da_wo_compounds": [
+    "daran", "darauf", "daraus", "dabei", "dadurch", "dafür", "dagegen",
+    "damit", "danach", "darüber", "darum", "davon", "davor", "wozu",
+    "womit", "wovon", "woran", "worauf", "woraus", "wodurch", "wofür",
+    "wogegen", "wohin", "woher"
+  ],
+  "negation_words": [
+    "nicht", "kein", "keine", "keiner", "keines", "keinem", "keinen",
+    "niemals", "nie", "nichts", "nirgendwo", "weder", "noch"
+  ],
+  "verb_position_indicators": {
+    "main_clause_triggers": [
+      "aber", "denn", "doch", "jedoch", "sondern", "und", "oder",
+      "deshalb", "darum", "deswegen", "trotzdem", "sonst", "also"
+    ],
+    "subclause_position_triggers": [
+      "dass", "weil", "wenn", "als", "bevor", "nachdem", "obwohl",
+      "während", "sobald", "solange", "bis", "seitdem", "falls",
+      "sofern", "ob", "indem", "dadurch dass", "ohne dass",
+      "anstatt dass", "je", "desto", "umso"
+    ],
+    "verb_at_end_markers": [
+      "kann", "kannst", "können", "könnt", "musst", "müssen",
+      "muss", "soll", "sollen", "sollt", "will", "willst",
+      "wollen", "wollt", "mag", "magst", "mögen", "mögt",
+      "darf", "darfst", "dürfen", "dürft", "hat", "habe",
+      "hast", "haben", "ist", "bin", "bist", "sind", "seid",
+      "wird", "werde", "wirst", "werden", "lässt", "lassen"
+    ]
+  },
+   "case_markers": {
+     "accusative_prepositions": [
+       "durch", "für", "gegen", "ohne", "um", "bis", "entlang"
+     ],
+     "dative_prepositions": [
+       "aus", "bei", "mit", "nach", "von", "zu", "gegenüber",
+       "ab", "außer", "entgegen", "gemäß", "laut", "nahe", "samt",
+       "mitsamt", "seit", "trotz", "während", "wegen", "zuwider"
+     ],
+     "genitive_prepositions": [
+       "anstatt", "statt", "trotz", "während", "wegen", "innerhalb",
+       "außerhalb", "oberhalb", "unterhalb", "diesseits", "jenseits",
+       "beiderseits", "unweit", "fern", "laut", "kraft", "mangels"
+     ],
+     "accusative_articles": [
+       "den", "die", "das", "einen", "eine", "keinen", "keine"
+     ],
+     "dative_articles": [
+       "dem", "der", "den", "einem", "einer", "keinem", "keiner"
+     ]
+   },
+   "fixed_preposition_verb_combos": [
+     "achten auf", "antworten auf", "arbeiten an", "ärgern über",
+     "aufpassen auf", "bestehen aus", "bestehen auf", "bitten um",
+     "danken für", "denken an", "diskutieren über", "einladen zu",
+     "erinnern an", "erkennen an", "fragen nach", "freuen auf",
+     "freuen über", "führen zu", "geben zu", "gehen um",
+     "gehören zu", "glauben an", "halten für", "handeln von",
+     "helfen bei", "hoffen auf", "informieren über", "kämpfen für",
+     "kämpfen um", "kümmern um", "lächeln über", "leben von",
+     "leiden unter", "liegen an", "nachdenken über", "rechnen mit",
+     "reden über", "schreiben an", "schützen vor", "sorgen für",
+     "sprechen mit", "sprechen über", "sterben an", "suchen nach",
+     "teilnehmen an", "träumen von", "überzeugen von", "verfügen über",
+     "vergleichen mit", "verstehen von", "verzichten auf", "warten auf",
+     "warnen vor", "weinen über", "wissen von", "wohnen in",
+     "zweifeln an", "sich ärgern über", "sich bedanken für",
+     "sich beklagen über", "sich bemühen um", "sich beschäftigen mit",
+     "sich beschweren über", "sich bewerben um", "sich entscheiden für",
+     "sich entschuldigen für", "sich erinnern an", "sich freuen auf",
+     "sich freuen über", "sich gewöhnen an", "sich interessieren für",
+     "sich kümmern um", "sich schämen für", "sich sehnen nach",
+     "sich streiten über", "sich verabschieden von", "sich verlassen auf",
+     "sich vorbereiten auf", "sich wundern über"
+   ]
+}
