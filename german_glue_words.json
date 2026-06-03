@@ -1,4 +1,50 @@
 {
+  "colors": {
+    "preposition": "blue",
+    "two_way_preposition": "darkblue",
+    "conjunction": "green",
+    "comparison": "darkgreen",
+    "separable_prefix": "purple",
+    "personal_pronoun": "red",
+    "possessive_pronoun": "magenta",
+    "reflexive_pronoun": "orange",
+    "question_word": "cyan",
+    "modal_particle": "darkred",
+    "determiner_article": "teal",
+    "temporal_location_adverb": "brown",
+    "infinitive_marker": "olive",
+    "da_wo_compound": "coral",
+    "negation": "gray",
+    "modal_verb": "gold",
+    "main_clause_trigger": "lime",
+    "subclause_trigger": "darkorange",
+    "verb_at_end_marker": "goldenrod",
+    "accusative_preposition": "lightblue",
+    "dative_preposition": "lightcoral",
+    "genitive_preposition": "plum",
+    "accusative_article": "skyblue",
+    "dative_article": "salmon",
+    "fixed_preposition_verb": "violet",
+    "demonstrative_pronoun": "darkcyan",
+    "preposition_contraction": "steelblue",
+    "direction_adverb": "lightseagreen",
+    "position_adverb": "mediumturquoise",
+    "relative_location": "turquoise",
+    "comparative_quantifier": "yellowgreen",
+    "intensifier": "khaki",
+    "orientation_preposition": "steelblue",
+    "transition_word": "plum",
+    "cause_effect_word": "hotpink",
+    "relative_pronoun": "orchid",
+    "time_preposition": "lightsteelblue",
+    "negation_placement": "dimgray",
+    "comparative_adjective": "olivedrab",
+    "werden_form": "gold",
+    "haben_sein_form": "gold",
+    "modal_past": "gold",
+    "tun_machen": "gold",
+    "indefinite_pronoun": "mediumaquamarine"
+  },
   "prepositions": [
     "aus", "bei", "mit", "nach", "von", "zu", "gegenüber", "durch", "für",
     "gegen", "ohne", "um", "an", "auf", "hinter", "in", "neben", "über",
@@ -37,8 +83,8 @@
     "zu", "zurecht", "zurück", "zusammen"
   ],
   "personal_pronouns": [
-    "ich", "du", "er", "sie", "es", "wir", "ihr", "sie", "Sie", "mich",
-    "dich", "ihn", "uns", "euch", "Ihnen", "mir", "dir", "ihr"
+    "ich", "du", "er", "sie", "es", "wir", "ihr", "mich",
+    "dich", "ihn", "uns", "euch", "mir", "dir"
   ],
   "possessive_pronouns": [
     "mein", "meine", "meiner", "meines", "meinem", "meinen", "dein", "deine",
@@ -82,9 +128,13 @@
     "an", "auf", "hinter", "in", "neben", "über", "unter", "vor", "zwischen"
   ],
   "modal_verbs": [
-    "kann", "kannst", "können", "könnt", "musst", "müssen", "muss", "soll",
-    "sollen", "sollt", "will", "willst", "wollen", "wollt", "mag", "magst",
-    "mögen", "mögt", "darf", "darfst", "dürfen", "dürft"
+    "kann", "kannst", "können", "könnt", "muss", "musst", "müssen",
+    "soll", "sollst", "sollen", "sollt", "will", "willst", "wollen",
+    "wollt", "mag", "magst", "mögen", "mögt", "darf", "darfst",
+    "dürfen", "dürft", "hat", "habe", "hast", "haben", "ist", "bin",
+    "bist", "sind", "seid", "war", "warst", "waren", "wart", "wird",
+    "werde", "wirst", "werden", "lässt", "lassen", "tat", "getan",
+    "machte", "gemacht"
   ],
   "subclause_triggers": [
     "dass", "weil", "wenn", "obwohl", "damit", "so dass", "falls", "während",
@@ -120,52 +170,52 @@
       "wird", "werde", "wirst", "werden", "lässt", "lassen"
     ]
   },
-   "case_markers": {
-     "accusative_prepositions": [
-       "durch", "für", "gegen", "ohne", "um", "bis", "entlang"
-     ],
-     "dative_prepositions": [
-       "aus", "bei", "mit", "nach", "von", "zu", "gegenüber",
-       "ab", "außer", "entgegen", "gemäß", "laut", "nahe", "samt",
-       "mitsamt", "seit", "trotz", "während", "wegen", "zuwider"
-     ],
-     "genitive_prepositions": [
-       "anstatt", "statt", "trotz", "während", "wegen", "innerhalb",
-       "außerhalb", "oberhalb", "unterhalb", "diesseits", "jenseits",
-       "beiderseits", "unweit", "fern", "laut", "kraft", "mangels"
-     ],
-     "accusative_articles": [
-       "den", "die", "das", "einen", "eine", "keinen", "keine"
-     ],
-     "dative_articles": [
-       "dem", "der", "den", "einem", "einer", "keinem", "keiner"
-     ]
-   },
-   "fixed_preposition_verb_combos": [
-     "achten auf", "antworten auf", "arbeiten an", "ärgern über",
-     "aufpassen auf", "bestehen aus", "bestehen auf", "bitten um",
-     "danken für", "denken an", "diskutieren über", "einladen zu",
-     "erinnern an", "erkennen an", "fragen nach", "freuen auf",
-     "freuen über", "führen zu", "geben zu", "gehen um",
-     "gehören zu", "glauben an", "halten für", "handeln von",
-     "helfen bei", "hoffen auf", "informieren über", "kämpfen für",
-     "kämpfen um", "kümmern um", "lächeln über", "leben von",
-     "leiden unter", "liegen an", "nachdenken über", "rechnen mit",
-     "reden über", "schreiben an", "schützen vor", "sorgen für",
-     "sprechen mit", "sprechen über", "sterben an", "suchen nach",
-     "teilnehmen an", "träumen von", "überzeugen von", "verfügen über",
-     "vergleichen mit", "verstehen von", "verzichten auf", "warten auf",
-     "warnen vor", "weinen über", "wissen von", "wohnen in",
-     "zweifeln an", "sich ärgern über", "sich bedanken für",
-     "sich beklagen über", "sich bemühen um", "sich beschäftigen mit",
-     "sich beschweren über", "sich bewerben um", "sich entscheiden für",
-     "sich entschuldigen für", "sich erinnern an", "sich freuen auf",
-     "sich freuen über", "sich gewöhnen an", "sich interessieren für",
-     "sich kümmern um", "sich schämen für", "sich sehnen nach",
-     "sich streiten über", "sich verabschieden von", "sich verlassen auf",
-     "sich vorbereiten auf", "sich wundern über"
-   ],
-   "orientation_adverbs": {
+  "case_markers": {
+    "accusative_prepositions": [
+      "durch", "für", "gegen", "ohne", "um", "bis", "entlang"
+    ],
+    "dative_prepositions": [
+      "aus", "bei", "mit", "nach", "von", "zu", "gegenüber",
+      "ab", "außer", "entgegen", "gemäß", "laut", "nahe", "samt",
+      "mitsamt", "seit", "trotz", "während", "wegen", "zuwider"
+    ],
+    "genitive_prepositions": [
+      "anstatt", "statt", "trotz", "während", "wegen", "innerhalb",
+      "außerhalb", "oberhalb", "unterhalb", "diesseits", "jenseits",
+      "beiderseits", "unweit", "fern", "laut", "kraft", "mangels"
+    ],
+    "accusative_articles": [
+      "den", "die", "das", "einen", "eine", "keinen", "keine"
+    ],
+    "dative_articles": [
+      "dem", "der", "den", "einem", "einer", "keinem", "keiner"
+    ]
+  },
+  "fixed_preposition_verb_combos": [
+    "achten auf", "antworten auf", "arbeiten an", "ärgern über",
+    "aufpassen auf", "bestehen aus", "bestehen auf", "bitten um",
+    "danken für", "denken an", "diskutieren über", "einladen zu",
+    "erinnern an", "erkennen an", "fragen nach", "freuen auf",
+    "freuen über", "führen zu", "geben zu", "gehen um",
+    "gehören zu", "glauben an", "halten für", "handeln von",
+    "helfen bei", "hoffen auf", "informieren über", "kämpfen für",
+    "kämpfen um", "kümmern um", "lächeln über", "leben von",
+    "leiden unter", "liegen an", "nachdenken über", "rechnen mit",
+    "reden über", "schreiben an", "schützen vor", "sorgen für",
+    "sprechen mit", "sprechen über", "sterben an", "suchen nach",
+    "teilnehmen an", "träumen von", "überzeugen von", "verfügen über",
+    "vergleichen mit", "verstehen von", "verzichten auf", "warten auf",
+    "warnen vor", "weinen über", "wissen von", "wohnen in",
+    "zweifeln an", "sich ärgern über", "sich bedanken für",
+    "sich beklagen über", "sich bemühen um", "sich beschäftigen mit",
+    "sich beschweren über", "sich bewerben um", "sich entscheiden für",
+    "sich entschuldigen für", "sich erinnern an", "sich freuen auf",
+    "sich freuen über", "sich gewöhnen an", "sich interessieren für",
+    "sich kümmern um", "sich schämen für", "sich sehnen nach",
+    "sich streiten über", "sich verabschieden von", "sich verlassen auf",
+    "sich vorbereiten auf", "sich wundern über"
+  ],
+  "orientation_adverbs": {
     "direction": [
       "links", "rechts", "geradeaus", "rückwärts", "vorwärts",
       "aufwärts", "abwärts", "seitwärts", "nordwärts", "südwärts",
@@ -199,7 +249,7 @@
     "bei", "entlang", "gegenüber", "um ... herum",
     "hindurch", "durch", "jenseits", "diesseits"
   ],
-    "transition_words": [
+  "transition_words": [
     "zuerst", "dann", "danach", "anschließend", "schließlich",
     "endlich", "inzwischen", "mittlerweile", "indes", "unterdessen",
     "vorher", "nachher", "währenddessen", "gleichzeitig"
@@ -209,18 +259,52 @@
     "folglich", "dementsprechend", "infolgedessen", "demnach"
   ],
   "relative_pronouns": [
-  "der", "die", "das", "den", "dem", "des",
-  "welcher", "welche", "welches", "welchem", "welchen"
-],
+    "der", "die", "das", "den", "dem", "des",
+    "welcher", "welche", "welches", "welchem", "welchen"
+  ],
   "time_prepositions": [
-  "um", "von", "bis", "ab", "seit", "vor", "nach",
-  "gegen", "zwischen", "über", "in", "an", "zu"
-],
- "negation_placement": [
-  "nicht", "kein", "nie", "niemals", "nichts", "weder", "noch"
-],
- "comparative_adjectives": [
-  "größer", "kleiner", "besser", "schlechter", "mehr", "weniger",
-  "älter", "jünger", "schneller", "langsamer", "höher", "tiefer"
-]
+    "um", "von", "bis", "ab", "seit", "vor", "nach",
+    "gegen", "zwischen", "über", "in", "an", "zu"
+  ],
+  "negation_placement": [
+    "nicht", "kein", "nie", "niemals", "nichts", "weder", "noch"
+  ],
+  "comparative_adjectives": [
+    "größer", "kleiner", "besser", "schlechter", "mehr", "weniger",
+    "älter", "jünger", "schneller", "langsamer", "höher", "tiefer"
+  ],
+  "demonstrative_pronouns": [
+    "dieser", "diese", "dieses", "diesen", "diesem", "dieses",
+    "jener", "jene", "jenes", "jener", "jenem", "jenen",
+    "solcher", "solche", "solches", "solchen", "solchem", "solches",
+    "der", "die", "das", "den", "dem", "des"
+  ],
+  "preposition_contractions": [
+    "zum", "zur", "beim", "ins", "aufs", "durchs", "übers",
+    "unters", "hinters", "vors", "ans", "hinterm", "überm",
+    "unterm", "vorm", "hinten", "oben", "unten", "nebenan"
+  ],
+  "werden_conjugations": [
+    "werde", "wirst", "wird", "werden", "wurde", "wurdest",
+    "wurden", "wurdet", "worden", "geworden"
+  ],
+  "haben_sein_conjugations": [
+    "hatte", "hattest", "hatten", "hattet", "gehabt",
+    "sei", "seist", "seien", "wäre", "wärst", "wären", "wärt", "gewesen"
+  ],
+  "modal_verbs_past": [
+    "konnte", "konntest", "konnten", "konntet", "musste", "musstest",
+    "mussten", "musstet", "sollte", "solltest", "sollten", "solltet",
+    "wollte", "wolltest", "wollten", "wolltet", "durfte", "durftest",
+    "durften", "durftet", "mochte", "mochtest", "mochten", "mochtet"
+  ],
+  "tun_machen": [
+    "tat", "tatst", "taten", "tatet", "getan", "machte", "machtest",
+    "machten", "machtet", "gemacht"
+  ],
+  "indefinite_pronouns": [
+    "man", "jemand", "niemand", "einer", "keiner", "alles", "nichts",
+    "etwas", "vieles", "weniges", "einige", "mehrere", "wenige",
+    "viele", "alle", "beide", "sämtliche"
+  ]
 }
