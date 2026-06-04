@@ -40,6 +40,7 @@
     "negation_placement": "dimgray",
     "comparative_adjective": "olivedrab",
     "werden_form": "gold",
+    "lassen_forms":"gold",
     "haben_sein_form": "gold",
     "modal_past": "gold",
     "tun_machen": "gold",
@@ -84,7 +85,7 @@
   ],
   "personal_pronouns": [
     "ich", "du", "er", "sie", "es", "wir", "ihr", "mich",
-    "dich", "ihn", "uns", "euch", "mir", "dir"
+    "dich", "ihn", "uns", "euch", "mir", "dir","ihnen", "ihm"
   ],
   "possessive_pronouns": [
     "mein", "meine", "meiner", "meines", "meinem", "meinen", "dein", "deine",
@@ -95,7 +96,7 @@
     "Ihrer", "Ihres", "Ihrem", "Ihren"
   ],
   "reflexive_pronouns": [
-    "mich", "dich", "sich", "uns", "euch", "mir", "dir"
+    "mich", "dich", "sich", "uns", "euch"
   ],
   "question_words": [
     "wer", "wen", "wem", "wessen", "was", "welcher", "welche", "welches",
@@ -111,7 +112,7 @@
   "determiners_articles": [
     "der", "die", "das", "den", "dem", "des", "ein", "eine", "einer",
     "eines", "einem", "einen", "kein", "keine", "keiner", "keines",
-    "keinem", "keinen"
+    "keinem", "keinen", "dessen", "deren"
   ],
   "temporal_location_adverbs": [
     "hier", "dort", "dorther", "dorthin", "da", "dahin", "davon", "danach",
@@ -128,23 +129,24 @@
     "an", "auf", "hinter", "in", "neben", "über", "unter", "vor", "zwischen"
   ],
   "modal_verbs": [
-    "kann", "kannst", "können", "könnt", "muss", "musst", "müssen",
-    "soll", "sollst", "sollen", "sollt", "will", "willst", "wollen",
-    "wollt", "mag", "magst", "mögen", "mögt", "darf", "darfst",
-    "dürfen", "dürft", "hat", "habe", "hast", "haben", "ist", "bin",
-    "bist", "sind", "seid", "war", "warst", "waren", "wart", "wird",
-    "werde", "wirst", "werden", "lässt", "lassen", "tat", "getan",
-    "machte", "gemacht"
+  "kann", "kannst", "können", "könnt",
+  "muss", "musst", "müssen",
+  "soll", "sollst", "sollen", "sollt",
+  "will", "willst", "wollen", "wollt",
+  "mag", "magst", "mögen", "mögt",
+  "darf", "darfst", "dürfen", "dürft",
+  "möchte", "möchtest", "möchten", "möchtet"
   ],
   "subclause_triggers": [
     "dass", "weil", "wenn", "obwohl", "damit", "so dass", "falls", "während",
-    "bevor", "nachdem"
+    "bevor", "nachdem", "sobald", "solange", "soweit", "sooft", "indem", "ob", 
+    "als ob", "je ... desto", "wodurch", "wohingegen", "wobei"
   ],
   "da_wo_compounds": [
     "daran", "darauf", "daraus", "dabei", "dadurch", "dafür", "dagegen",
     "damit", "danach", "darüber", "darum", "davon", "davor", "wozu",
     "womit", "wovon", "woran", "worauf", "woraus", "wodurch", "wofür",
-    "wogegen", "wohin", "woher"
+    "wogegen", "wohin", "woher", "worunter", "worüber", "drunter", "drüber"
   ],
   "negation_words": [
     "nicht", "kein", "keine", "keiner", "keines", "keinem", "keinen",
@@ -213,7 +215,8 @@
     "sich freuen über", "sich gewöhnen an", "sich interessieren für",
     "sich kümmern um", "sich schämen für", "sich sehnen nach",
     "sich streiten über", "sich verabschieden von", "sich verlassen auf",
-    "sich vorbereiten auf", "sich wundern über"
+    "sich vorbereiten auf", "sich wundern über", "denken an", "glauben an", 
+    "sich gewöhnen an"
   ],
   "orientation_adverbs": {
     "direction": [
@@ -274,7 +277,7 @@
     "älter", "jünger", "schneller", "langsamer", "höher", "tiefer"
   ],
   "demonstrative_pronouns": [
-    "dieser", "diese", "dieses", "diesen", "diesem", "dieses",
+    "dieser", "diese", "dieses", "diesen", "diesem", 
     "jener", "jene", "jenes", "jener", "jenem", "jenen",
     "solcher", "solche", "solches", "solchen", "solchem", "solches",
     "der", "die", "das", "den", "dem", "des"
@@ -282,15 +285,21 @@
   "preposition_contractions": [
     "zum", "zur", "beim", "ins", "aufs", "durchs", "übers",
     "unters", "hinters", "vors", "ans", "hinterm", "überm",
-    "unterm", "vorm", "hinten", "oben", "unten", "nebenan"
+    "unterm", "vorm", "vom", "am", "im", "fürs", "ums"
   ],
   "werden_conjugations": [
     "werde", "wirst", "wird", "werden", "wurde", "wurdest",
     "wurden", "wurdet", "worden", "geworden"
   ],
+  "lassen_forms": [
+  "lasse", "lässt", "lassen", "ließ", "ließen", "gelassen"
+  ],
   "haben_sein_conjugations": [
     "hatte", "hattest", "hatten", "hattet", "gehabt",
-    "sei", "seist", "seien", "wäre", "wärst", "wären", "wärt", "gewesen"
+    "sei", "seist", "seien", "wäre", "wärst", "wären", "wärt", "gewesen",
+    "hat", "habe", "hast", "haben",
+    "ist", "bin", "bist", "sind", "seid",
+    "war", "warst", "waren", "wart"
   ],
   "modal_verbs_past": [
     "konnte", "konntest", "konnten", "konntet", "musste", "musstest",
