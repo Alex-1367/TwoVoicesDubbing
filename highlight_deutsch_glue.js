@@ -60,7 +60,8 @@ const wordCategories = [
   { words: glueWords.haben_sein_conjugations || [], color: C.haben_sein_form || 'gold', name: 'Haben/Sein Form'},
   { words: glueWords.modal_verbs_past || [], color: C.modal_past || 'gold', name: 'Modal Past'},
   { words: glueWords.tun_machen || [], color: C.tun_machen || 'gold', name: 'Tun/Machen'},
-  { words: glueWords.indefinite_pronouns || [], color: C.indefinite_pronoun || 'mediumaquamarine', name: 'Indefinite Pronoun' }
+  { words: glueWords.indefinite_pronouns || [], color: C.indefinite_pronoun || 'mediumaquamarine', name: 'Indefinite Pronoun' },
+  { words: glueWords.konjunktiv_ii_forms ? Object.values(glueWords.konjunktiv_ii_forms).flat() : [], color: C.konjunktiv_ii || 'gold', name: 'Konjunktiv II'},
 ];
 
 function buildMultiWordRegex(wordList) {

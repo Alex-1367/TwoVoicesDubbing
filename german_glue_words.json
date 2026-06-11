@@ -44,7 +44,8 @@
     "haben_sein_form": "gold",
     "modal_past": "gold",
     "tun_machen": "gold",
-    "indefinite_pronoun": "mediumaquamarine"
+    "indefinite_pronoun": "mediumaquamarine",
+    "konjunktiv_ii": "gold"
   },
   "prepositions": [
     "aus", "bei", "mit", "nach", "von", "zu", "gegenüber", "durch", "für",
@@ -289,7 +290,8 @@
   ],
   "werden_conjugations": [
     "werde", "wirst", "wird", "werden", "wurde", "wurdest",
-    "wurden", "wurdet", "worden", "geworden"
+    "wurden", "wurdet", "worden", "geworden",
+        "würde", "würdest", "würden", "würdet"
   ],
   "lassen_forms": [
   "lasse", "lässt", "lassen", "ließ", "ließen", "gelassen"
@@ -315,5 +317,15 @@
     "man", "jemand", "niemand", "einer", "keiner", "alles", "nichts",
     "etwas", "vieles", "weniges", "einige", "mehrere", "wenige",
     "viele", "alle", "beide", "sämtliche"
-  ]
+  ],
+  "konjunktiv_ii_forms": {
+    "haben": ["hätte", "hättest", "hätten", "hättet"],
+    "sein": ["wäre", "wärst", "wären", "wärt"],
+    "können": ["könnte", "könntest", "könnten", "könntet"],
+    "müssen": ["müsste", "müsstest", "müssten", "müsstet"],
+    "dürfen": ["dürfte", "dürftest", "dürften", "dürftet"],
+    "sollen": ["sollte", "solltest", "sollten", "solltet"],
+    "wollen": ["wollte", "wolltest", "wollten", "wolltet"],
+    "wissen": ["wüsste", "wüsstest", "wüssten", "wüsstet"]
+  }
 }
